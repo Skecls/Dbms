@@ -8,4 +8,4 @@
 8. create view cust_view as select cust_name, item_name, bill_no from customer c, pizza_item p, sale s where s.item_id = p.item_id and s.cust_id = c.cust_id;
 9. select cust_id, cust_name from customer c, sale s where c.cust_id = s.cust_id and s.cust_id in (select cust_id from pizza_item p left join sale s on s.item_id = p.item_id);
 10. delete from pizza_item where item_id not in (select item_id from sale);
-
+this is a new account
